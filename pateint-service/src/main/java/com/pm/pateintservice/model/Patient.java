@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
-public class Pateint {
+public class Patient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,7 +22,7 @@ public class Pateint {
     @NotNull
     private String address;
     @NotNull
-    private LocalDate DOB;
+    private LocalDate dateOfBirth;
     @NotNull
     private LocalDate registeredDate;
 
@@ -58,12 +58,12 @@ public class Pateint {
         this.address = address;
     }
 
-    public LocalDate getDOB() {
-        return DOB;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDOB(LocalDate DOB) {
-        this.DOB = DOB;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public LocalDate getRegisteredDate() {
